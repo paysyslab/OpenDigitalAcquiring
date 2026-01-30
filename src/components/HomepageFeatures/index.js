@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'POS Acquiring',
+    Svg: require('@site/static/img/POS-device.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Our POS services enables merchants to accept payments via Mastercard, VISA, UnionPay, and PayPak. It ensures secure, seamless transactions and compliance with global standards.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'RAAST Acquiring',
+    Svg: require('@site/static/img/RAAST.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        RAAST acquiring allows merchants to accept payments via QRs and RTP services. It offers secure, real-time transactions with seamless integration.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'RAAST + POS',
+    Svg: require('@site/static/img/RAASTLogo.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        RAAST + POS acquiring combines QR and RTP payment options with traditional POS solutions. It offers secure, real-time transactions through both digital and card-based methods.
       </>
     ),
   },
