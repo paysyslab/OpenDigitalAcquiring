@@ -6,8 +6,8 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #4046f5;
-  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary: #3b2f8b;
+  --ifm-color-primary-dark: #f1d600;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
@@ -28,3 +28,16 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+.navbar {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s; /* Smooth transition when hiding/showing */
+}
+
+
+
+

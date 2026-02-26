@@ -8,11 +8,18 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url('/img/banner.png'); 
+  background-image: url('/img/banner1.png'); 
   background-size: cover;
   background-position: center;
   height: 600px;
   
+}
+
+.bannerimg {
+  position: relative;
+  left: -290px;
+  height: 420px;
+  top: -50px;
 }
 
 @media screen and (max-width: 996px) {
@@ -24,11 +31,54 @@
 
 .buttons {
   position: absolute; /* Position the button relative to its parent */
-  bottom: 100px; /* Adjust the distance from the bottom */
-  right: 350px; /* Adjust the distance from the right */
+  top: 360px; /* Adjust the distance from the bottom */
+  right: 373px; /* Adjust the distance from the right */
   padding: 1rem 2rem; /* Adjust the padding as needed */
   border-radius: 5px; /* Rounded corners */
   text-decoration: none; /* Remove underline */
   font-size: 1.2rem; /* Button text size */
   transition: background-color 0.3s ease; /* Smooth hover effect */
 }
+
+
+.bannertext {
+  position: absolute; /* Position the button relative to its parent */
+  top: 100px; /* Adjust the distance from the bottom */
+  right: 206px; /* Adjust the distance from the right */
+  padding: 1rem 2rem; /* Adjust the padding as needed */
+  text-decoration: none; /* Remove underline */
+  font-size: 50px;        /* Text size */
+  color: #d9d9d9;         /* Text color */
+  font-family: 'Poppins', sans-serif;  /* Font */
+  font-weight: 600;       /* Boldness */
+  user-select: none;
+}
+
+.bannertext span {
+  display: block;
+  text-align: left; /* Align both lines */
+}
+
+.bannertext2 {
+  position: absolute; /* Position the button relative to its parent */
+  top: 270px; /* Adjust the distance from the bottom */
+  right: 145px; /* Adjust the distance from the right */
+  padding: 1rem 2rem; /* Adjust the padding as needed */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px;        /* Text size */
+  color: #d9d9d9;         /* Text color */
+  font-family: 'Poppins', sans-serif;  /* Font */
+  font-weight: 600;       /* Boldness */
+  user-select: none;
+}
+
+.bannertext2 span {
+  display: block;
+  text-align: left; /* Align both lines */
+}
+
+.bannercontainer {
+  display: block;
+  text-align: left; /* Align both lines */
+}
+

@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
+
 
 const FeatureList = [
   {
@@ -11,40 +13,59 @@ const FeatureList = [
         Our POS services enables merchants to accept payments via Mastercard, VISA, UnionPay, and PayPak. It ensures secure, seamless transactions and compliance with global standards.
       </>
     ),
+
+    link: '/acquiring/pos',
+    linkText: 'See More',    
   },
+
+  
   {
     title: 'RAAST Acquiring',
     Svg: require('@site/static/img/RAAST.svg').default,
     description: (
       <>
-        RAAST acquiring allows merchants to accept payments via QRs and RTP services. It offers secure, real-time transactions with seamless integration.
+        RAAST acquiring allows merchants to accept payments via SQRC, DQRC and Requst To Pay now & later services. It offers secure, real-time transactions with seamless integration.
       </>
     ),
+
+    link: '/docs/RAAST/RAAST-P2M-Acquiring',
+    linkText: 'See More',
   },
   {
-    title: 'RAAST + POS',
+    title: 'Hybrid (RAAST + POS)',
     Svg: require('@site/static/img/RAASTLogo.svg').default,
     description: (
       <>
         RAAST + POS acquiring combines QR and RTP payment options with traditional POS solutions. It offers secure, real-time transactions through both digital and card-based methods.
       </>
     ),
+    link: '/docs/RAAST/Introduction-to-RAAST',
+    linkText: 'See More',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description, link, linkText }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className="col col--4">
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className="featureSvg" role="img" />
       </div>
+
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <h3>{title}</h3>
         <p>{description}</p>
+
+        <Link
+          className="button button--primary button--md"
+          to={link}
+        >
+          {linkText}
+        </Link>
       </div>
     </div>
   );
 }
+
 
 export default function HomepageFeatures() {
   return (

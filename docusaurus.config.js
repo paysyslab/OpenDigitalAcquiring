@@ -76,14 +76,28 @@ themeConfig: {
     navbar: {
       logo: {
         alt: 'Paysys Labs',
-        src: 'img/Open-Acquiring.png',  
+        src: 'img/Open-Acquiring.png',
+        style: {
+      width: '220px',  
+      height: 'auto',  
+    }, 
+     
       },
       items: [
-        { to: '/docs/RAAST/Introduction-to-RAAST', label: 'RAAST', position: 'left' },  
-        { to: '/docs/back-office/logging-in-and-changing-password', label: 'POS', position: 'left' },  
-        { to: '/docs/developer-workflow', label: 'RAAST + POS', position: 'left'},
+        { to: '/docs/RAAST/RAAST-P2M-Acquiring', label: 'RAAST', position: 'left' },  
+        { to: '/docs/tutorial-extras/manage-docs-versions', label: 'POS', position: 'left' },  
+        { to: '/docs/developer-workflow', label: 'Hybrid (RAAST + POS)', position: 'left'},
       ],
     },
+
+    docs: {
+    sidebar: {
+      hideable: true,
+      autoCollapseCategories: true,
+      
+    },
+    
+  },
 
     footer: {
       style: 'dark',

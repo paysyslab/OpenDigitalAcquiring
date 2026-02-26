@@ -1,0 +1,141 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Bulk Merchant Profile Creation
+
+## Functional Flow
+
+| **Requester Action(s)**                | **Process Description**|
+|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Backoffice** | • Backoffice User Logs In.  <br /> • User uploads the Bulk Merchants Files to system|
+| **Backend Services**| • Backend Services verify the users whose profile is to be created using the Create or C Parameter in the action column. <br />• Backend Services requests Title Fetch with Merchant IDs to Acquiring Services (RAAST) 
+| **Acquiring Services (RAAST) & RAAST CAS Services** | • Acquiring Services (RAAST) receives the API call from Backend Services and will do the following actions: <br /> &nbsp;&nbsp; o Authenticate the token and forward call with X- Client ID. <br />• Validates if any of the Merchant IDs already exists (associated with client ID). <br /> &nbsp;&nbsp; o In case a Merchant ID exists, it will Reject that particular request with response “Merchant ID already exists” to the Backend Services. <br />• In case Merchant is not registered with this ID: <br /> &nbsp;&nbsp; o Acquiring Services (RAAST) will validate all the API Parameters requested in the body. <br /> &nbsp;&nbsp; o If all Params are OK, then Title Fetch call will be sent to the RAAST CAS Services with BIC and IBAN. <br /> &nbsp;&nbsp; o If Title matches, it will call the following APIs of RAAST CAS Services in sequence (Failure on one of the below API will result in Termination of that Merchant’s Profile Creation): <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. CreateMerchantProfile API to Create Merchant Profile on CAS. <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. After success of above API, ActivateCustomerProfile is called to Activate that Merchant Profile. <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. After success of above API, Acquiring Services (RAAST) will mark the Status of Merchant as Active and then call RegisterMerchantAccount to Register the account of that Merchant with CAS. <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. After success of above API, CreateMerchantAlias is called to Create an Alias (Till Code) and attach it to that Merchant’s Profile. <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. After success of above API, LinkAliastoAccount is called to Link the registered Account of that Merchant to their Alias (Till Code). <br />• If Title Fetch does not return any Title, then Create Profile will be declined |
+| **Backoffice Services** | • Backoffice Services receives the relevant response from Acquiring Services (RAAST) and store the status/response to be shown to the backoffice user.     
+
+
+
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![OpenConnect – RAAST Integration Architecture](/img/bulk-merchant-updation-ff.png)
+</div>
+</Zoom>
+
+## Negative Cases
+
+### Invalid Client ID
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Merchant submits their profile to the Backoffice.<br />• Backoffice sends the profile data to Backoffice Services for validation.<br />• Backoffice informs the Merchant of the following:<br />&nbsp;&nbsp;o The X-Client ID is invalid.<br />&nbsp;&nbsp;o Correction is required before re-submission. |
+| **Backoffice Services** | • Backoffice Services detects an Invalid Client ID.<br />• Returns an error response to the Backoffice module. |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![OpenConnect – RAAST Integration Architecture](/img/Bulk-merchant-ff-nc-1.png)
+</div>
+</Zoom>
+
+### Invalid Parameter Values Case 
+
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Backoffice submits the merchant profile data (including parameters) to Backoffice Services. <br /> • Backoffice informs the Merchant about the invalid parameters. |
+| **Backoffice Services** | • Backoffice Services validates the parameters. <br /> • If invalid parameters are detected: <br /> &nbsp;&nbsp;o Backoffice Services sends an error response. <br /> &nbsp;&nbsp;o Error Message: "Invalid Parameter Values" returned to Backoffice. |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![OpenConnect – RAAST Integration Architecture](/img/Bulk-merchant-ff-nc-2.png)
+</div>
+</Zoom>
+
+### Mandatory Parameter Missing Case 
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Backoffice submits the merchant profile data to Backoffice Services, including required parameters. <br /> • Backoffice Services validates the parameters and detects if any mandatory parameter is missing. <br /> • Backoffice informs the Merchant about the missing mandatory parameter. |
+| **Backoffice Services** | • **Validation Logic:** <br /> &nbsp;&nbsp;o If a mandatory parameter is missing: <br /> &nbsp;&nbsp;&nbsp;&nbsp;- Backoffice Services sends an error response to Backoffice. <br /> &nbsp;&nbsp;&nbsp;&nbsp;- Error Message: "Mandatory Parameter Missing". |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![OpenConnect – RAAST Integration Architecture](/img/Bulk-merchant-ff-nc-3.png)
+</div>
+</Zoom>
+
+### Merchant Already Exists 
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Backoffice submits the merchant profile data to Backoffice Services. <br /> • Backoffice notifies the Merchant that the profile creation failed. <br /> &nbsp;&nbsp;o Reason: "Merchant Already Exists". |
+| **Backoffice Services** | • Backoffice Services checks if the merchant already exists in the system. <br /> &nbsp;&nbsp;o Action: Queries Acquiring Services (RAAST) using the Merchant ID. <br /> • Receives error from Acquiring Services and informs the Backoffice module. |
+| **Acquiring Services (RAAST) & RAAST CAS Services** | • **Duplicate Check Logic:** <br /> &nbsp;&nbsp;o Validates if the Merchant ID is already registered in the CAS. <br /> &nbsp;&nbsp;o If registered: Returns error "Merchant Already Exists" to Backoffice Services. |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![OpenConnect – RAAST Integration Architecture](/img/Bulk-merchant-ff-nc-4.png)
+</div>
+</Zoom>
+
+### Merchant Account Title Does Not Match Case 
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Backoffice submits the merchant profile data to Backoffice Services. <br /> • Backoffice then notifies the Merchant that the account title does not match. |
+| **Backoffice Services** | • Backoffice Services validates the merchant account title. <br /> • Backoffice Services informs Backoffice about the mismatch error. |
+| **Acquiring Services (RAAST) & RAAST CAS Services** | • If the merchant account title does not match the expected value, Backoffice Services sends an error notification to Acquiring Services (RAAST): "Account Title Mismatch". <br /> • Acquiring Services (RAAST) returns the error back to Backoffice Services. |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![Create Merchant Profile - Account Title Mismatch](/img/Bulk-merchant-ff-nc-5.png)
+</div>
+</Zoom>
+
+### Title Fetch Failed – Invalid IBAN Case 
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Backoffice submits the merchant profile data to Backoffice Services. |
+| **Backoffice Services** | • Backoffice Services checks the parameters and initiates the Title Fetch request with Acquiring Services (RAAST), including BIC and IBAN. <br /> • Backoffice Services returns the error to Backoffice. |
+| **Acquiring Services (RAAST) & RAAST CAS Services** | • Acquiring Services (RAAST) forwards the request to OC CAS Services for validation. <br /> • OC CAS Services then forwards the error back to Acquiring Services (RAAST). <br /> • Acquiring Services (RAAST) notifies Backoffice Services of the invalid IBAN error. |
+| **OC CAS Services** | • OC CAS Services sends the IBAN to RAAST OC for validation. |
+| **RAAST OC** | • If the IBAN is invalid, RAAST OC returns an error to OC CAS Services. |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![Create Merchant Profile - Invalid IBAN](/img/Bulk-merchant-ff-nc-6.png)
+</div>
+</Zoom>
+
+### Title Fetch Failed – Other Restriction on Account Case 
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Backoffice submits the merchant profile data to Backoffice Services. <br /> • Backoffice Services returns the error to Backoffice. <br /> • Backoffice informs the Merchant that the account has restrictions. |
+| **Backoffice Services** | • Backoffice Services checks the parameters and initiates the Title Fetch request with Acquiring Services (RAAST), including BIC and IBAN. |
+| **Acquiring Services (RAAST) & RAAST CAS Services** | • Acquiring Services (RAAST) forwards the request to OC CAS Services for validation. <br /> • Acquiring Services (RAAST) sends the error to Backoffice Services. |
+| **OC CAS Services** | • OC CAS Services sends the IBAN and account details to RAAST OC to check if there are any restrictions on the account. <br /> • OC CAS Services forwards this error back to Acquiring Services (RAAST). |
+| **RAAST OC** | • If there are restrictions on the account, RAAST OC returns an error to OC CAS Services indicating that the account has restrictions. |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![Create Merchant Profile - Account Restriction](/img/Bulk-merchant-ff-nc-7.png)
+</div>
+</Zoom>
+
+
+### Title Fetch Failed – Timeout from Bank Case 
+
+| **Requester Action(s)** | **Process Description** |
+| :--- | :--- |
+| **Backoffice** | • Backoffice submits the merchant profile data to Backoffice Services. <br /> • Backoffice Services informs Backoffice about the timeout. <br /> • Backoffice then notifies the Merchant that the request failed due to a timeout. |
+| **Backoffice Services** | • Backoffice Services checks the parameters and initiates the Title Fetch request with Acquiring Services (RAAST), including BIC and IBAN. |
+| **Acquiring Services (RAAST) & RAAST CAS Services** | • Acquiring Services (RAAST) forwards the request to Raast CAS Services for validation. <br /> • Acquiring Services (RAAST) sends the timeout error to Backoffice Services. |
+| **Raast CAS Services** | • Raast CAS Services sends the IBAN validation request to RAAST OC. <br /> • Raast CAS Services forwards this error back to Acquiring Services (RAAST). |
+| **RAAST OC** | • If there is a timeout from the bank (i.e., RAAST OC does not respond in time), RAAST OC returns a "Timeout from Bank" error to Raast CAS Services. |
+
+<Zoom>
+<div style={{ textAlign: 'center'}}>
+  ![Create Merchant Profile - Timeout from Bank](/img/Bulk-merchant-ff-nc-8.png)
+</div>
+</Zoom>
