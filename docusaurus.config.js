@@ -15,9 +15,7 @@ const config = {
   favicon: 'img/Open-Acquiring.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+  
 
   // Set the production url of your site here
   url: 'https://paysyslabs.github.io',
@@ -35,12 +33,13 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en'],
+  // },
 
-  presets: [
+
+  plugins: ['docusaurus-plugin-image-zoom'],  presets: [
     [
       'classic',
       {
@@ -56,18 +55,21 @@ const config = {
     ],
   ],
 
+
+  
 themeConfig: {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      },
-      imageZoom: {
-        selector: '.theme-doc-markdown img',
-        options: {
-          margin:24,
-          background: '#000',
-        },
-      },
+    },
+    
+    zoom: {
+      selector: '.theme-doc-markdown img, article img',
+      config: {
+      margin: 24,
+      background: '#000',
+    },
+},
     tableOfContents: {
       minHeadingLevel: 2,  
       maxHeadingLevel: 4,  
@@ -76,14 +78,28 @@ themeConfig: {
     navbar: {
       logo: {
         alt: 'Paysys Labs',
-        src: 'img/Open-Acquiring.png',  
+        src: 'img/Open-Acquiring.png',
+        style: {
+      width: '220px',  
+      height: 'auto',  
+    }, 
+     
       },
       items: [
-        { to: '/docs/RAAST/Introduction-to-RAAST', label: 'RAAST', position: 'left' },  
-        { to: '/docs/back-office/logging-in-and-changing-password', label: 'POS', position: 'left' },  
-        { to: '/docs/developer-workflow', label: 'RAAST + POS', position: 'left'},
+        { to: '/docs/RAAST/RAAST-P2M-Acquiring', label: 'RAAST', position: 'left' },  
+        { to: '/docs/tutorial-extras/manage-docs-versions', label: 'POS', position: 'left' },  
+        { to: '/docs/hybrid/intro', label: 'Hybrid (RAAST + POS)', position: 'left'},
       ],
     },
+
+    docs: {
+    sidebar: {
+      hideable: true,
+      autoCollapseCategories: true,
+      
+    },
+    
+  },
 
     footer: {
       style: 'dark',
@@ -91,7 +107,15 @@ themeConfig: {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Paysys Labs.`,
     },
+    stylesheets: [
+    'https://cdn.jsdelivr.net/npm/medium-zoom@1.0.0/dist/medium-zoom.css',  
+  ],
   },
+
+
+
 };
+
+
 
 export default config;

@@ -1,0 +1,29 @@
+Backoffice Users: fbl-uat-mms.paysyslabs.com
+FBL_MAKER
+FBL_CHECKER
+FBL_BANKER
+FBL_APPROVER
+
+
+
+
+Password: Pakistan@1234
+
+Admin user:
+Bouser3
+Bouser4
+
+Pakistan@1234
+
+
+MP: fbl-uat-merchantportal.paysyslabs.com
+moiz.yahya@paysyslabs.com
+merchant protal password : Abcd@12345
+
+
+
+
+
+<div style={{ textAlign: 'center'}}>
+  ![OpenConnect – RAAST Integration Architecture](/img/view-role-img1.png)
+</div>
