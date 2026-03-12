@@ -7,7 +7,7 @@ The objective is to streamline onboarding while maintaining compliance with SBP 
 
 **Download bulk onboarding file**
 
-<a href="/static/files/bulk-merchant-onboarding-template.xlsx" download >
+<a href="/static/file/bulk-merchant-onboarding-template.xlsx" download >
   <button class="button button--secondary button--med"> <img src="https://cdn-icons-png.flaticon.com/16/724/724933.png" width="12" /> &nbsp; Download</button> 
 </a>
 

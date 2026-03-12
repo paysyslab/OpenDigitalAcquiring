@@ -8,7 +8,7 @@ The screen provides structured options to select merchant identifiers and upload
 
 **Download bulk onboarding file**
 
-<a href="/static/files/BULK-RTP.txt" download >
+<a href="/static/file/BULK-RTP.txt" download >
   <button class="button button--secondary button--med"> <img src="https://cdn-icons-png.flaticon.com/16/724/724933.png" width="12" /> &nbsp; Download</button> 
 </a>
 

@@ -27,7 +27,7 @@ Merchant or terminal data is compiled in a predefined structured file (typically
 
 **Download bulk onboarding file**
 
-<a href="/static/files/bulk-terminal-template.xlsx" download >
+<a href="/static/file/bulk-terminal-template.xlsx" download >
   <button class="button button--secondary button--med"> <img src="https://cdn-icons-png.flaticon.com/16/724/724933.png" width="12" /> &nbsp; Download</button> 
   
 </a>  

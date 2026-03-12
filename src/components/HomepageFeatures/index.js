@@ -14,7 +14,7 @@ const FeatureList = [
       </>
     ),
 
-    link: '/acquiring/pos',
+    link: '/docs/POS/Intro',
     linkText: 'See More',    
   },
 
