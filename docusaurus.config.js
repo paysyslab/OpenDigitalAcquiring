@@ -87,7 +87,7 @@ themeConfig: {
       },
       items: [
         { to: '/docs/RAAST/RAAST-P2M-Acquiring', label: 'RAAST', position: 'left' },  
-        { to: '/docs/tutorial-extras/manage-docs-versions', label: 'POS', position: 'left' },  
+        { to: '/docs/POS/intro', label: 'POS', position: 'left' },  
         { to: '/docs/hybrid/intro', label: 'Hybrid (RAAST + POS)', position: 'left'},
       ],
     },

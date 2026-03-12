@@ -323,9 +323,38 @@ module.exports = {
       ],
     },
   ],
-  
+ 
+  POSSidebar: [
+    {
+      type: 'doc',
+      label: 'Introduction',
+      id: 'POS/Intro',
+    },
+    {
+      type: 'category',
+      label: 'Functional Specification',
+      items: [
+      {
+        type: 'doc',
+        id: 'POS/FSD/pos',
+        label: 'POS payment flow',
+      },
+      {
+        type: 'doc',
+        id: 'POS/FSD/mpos',
+        label: 'mPOS payment flow',
+      },
+      {
+        type: 'doc',
+        id: 'POS/FSD/softpos',
+        label: 'SoftPOS payment flow'
+      },
+      ],
+    },
+  ],
+
+
   RAASTSidebar: 
-  
   [
     //RAAST Intro code 
     {

@@ -10,7 +10,7 @@ const FeatureList = [
     Svg: require('@site/static/img/POS-device.svg').default,
     description: (
       <>
-        Our POS services enables merchants to accept payments via Mastercard, VISA, UnionPay, and PayPak. It ensures secure, seamless transactions and compliance with global standards.
+        Our POS acquiring solution enables merchants to accept Mastercard, VISA, UnionPay, and PayPak payments. It ensures fast, secure transactions with full compliance to global payment standards.
       </>
     ),
 
@@ -20,11 +20,11 @@ const FeatureList = [
 
   
   {
-    title: 'RAAST Acquiring',
-    Svg: require('@site/static/img/RAAST.svg').default,
+    title: 'RAAST P2M Acquiring',
+    Svg: require('@site/static/img/RAASTLogo.svg').default,
     description: (
       <>
-        RAAST acquiring allows merchants to accept payments via SQRC, DQRC and Requst To Pay now & later services. It offers secure, real-time transactions with seamless integration.
+        RAAST P2M allows merchants to accept payments using SQRC, DQRC, and Request-to-Pay (Now & Later). It provides secure, instant transactions with easy integration.
       </>
     ),
 
@@ -33,10 +33,10 @@ const FeatureList = [
   },
   {
     title: 'Hybrid (RAAST + POS)',
-    Svg: require('@site/static/img/RAASTLogo.svg').default,
+    Svg: require('@site/static/img/RAAST.svg').default,
     description: (
       <>
-        RAAST + POS acquiring combines QR and RTP payment options with traditional POS solutions. It offers secure, real-time transactions through both digital and card-based methods.
+        Hybrid acquiring unifies RAAST payments with traditional card acceptance. Merchants can accept account-based and card-based payments through single platform.
       </>
     ),
     link: '/docs/RAAST/Introduction-to-RAAST',
