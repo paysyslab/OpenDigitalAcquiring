@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-RAAST/MMS/Merchant-profile-Management/kyc" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Merchant KYC (Know Your Customer) | Open Digital Acquiring</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://paysyslabs.github.io/OpenDigitalAcquiring-General/docs/RAAST/MMS/Merchant-profile-Management/kyc"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Merchant KYC (Know Your Customer) | Open Digital Acquiring"><meta data-rh="true" name="description" content="Merchant KYC is the process of verifying the identity of merchants to prevent fraud, ensure compliance with financial regulations, and mitigate risks. This process is crucial for establishing trust and ensuring that the merchant meets the required standards set by the Authorized Financial Institution or Regulatory Authority."><meta data-rh="true" property="og:description" content="Merchant KYC is the process of verifying the identity of merchants to prevent fraud, ensure compliance with financial regulations, and mitigate risks. This process is crucial for establishing trust and ensuring that the merchant meets the required standards set by the Authorized Financial Institution or Regulatory Authority."><link data-rh="true" rel="icon" href="/OpenDigitalAcquiring-General/img/Open-Acquiring.png"><link data-rh="true" rel="canonical" href="https://paysyslabs.github.io/OpenDigitalAcquiring-General/docs/RAAST/MMS/Merchant-profile-Management/kyc"><link data-rh="true" rel="alternate" href="https://paysyslabs.github.io/OpenDigitalAcquiring-General/docs/RAAST/MMS/Merchant-profile-Management/kyc" hreflang="en"><link data-rh="true" rel="alternate" href="https://paysyslabs.github.io/OpenDigitalAcquiring-General/docs/RAAST/MMS/Merchant-profile-Management/kyc" hreflang="x-default"><link rel="stylesheet" href="/OpenDigitalAcquiring-General/assets/css/styles.e4c8ec9a.css">
+<script src="/OpenDigitalAcquiring-General/assets/js/runtime~main.15a5fb99.js" defer="defer"></script>
+<script src="/OpenDigitalAcquiring-General/assets/js/main.29f81a00.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/OpenDigitalAcquiring-General/img/Open-Acquiring.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/OpenDigitalAcquiring-General/"><div class="navbar__logo"><img src="/OpenDigitalAcquiring-General/img/Open-Acquiring.png" alt="Paysys Labs" class="themedComponent_mlkZ themedComponent--light_NVdE" style="width:220px;height:auto"><img src="/OpenDigitalAcquiring-General/img/Open-Acquiring.png" alt="Paysys Labs" class="themedComponent_mlkZ themedComponent--dark_xIcU" style="width:220px;height:auto"></div></a><a class="navbar__item navbar__link" href="/OpenDigitalAcquiring-General/docs/RAAST/MMS/User Management/User-view">Merchant management</a><a class="navbar__item navbar__link" href="/OpenDigitalAcquiring-General/docs/RAAST/Merchant-portal/dashboard">Merchant portal</a><a class="navbar__item navbar__link" href="/OpenDigitalAcquiring-General/docs/RAAST/Merchant-app/Dashboard">Merchant app</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Merchant KYC (Know Your Customer)</h1></header>
+<p>Merchant KYC is the process of verifying the identity of merchants to prevent fraud, ensure compliance with financial regulations, and mitigate risks. This process is crucial for establishing trust and ensuring that the merchant meets the required standards set by the Authorized Financial Institution or Regulatory Authority.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kyc-process-for-merchant-onboarding"><strong>KYC Process for Merchant Onboarding</strong><a href="#kyc-process-for-merchant-onboarding" class="hash-link" aria-label="Direct link to kyc-process-for-merchant-onboarding" title="Direct link to kyc-process-for-merchant-onboarding" translate="no">​</a></h2>
+<p>The KYC process for merchant onboarding involves several steps, including identity verification, document submission, and risk assessment. These steps are designed to validate the legitimacy of the merchant and ensure that their business complies with regulatory requirements.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-kyc-verification-steps"><strong>Key KYC Verification Steps</strong><a href="#key-kyc-verification-steps" class="hash-link" aria-label="Direct link to key-kyc-verification-steps" title="Direct link to key-kyc-verification-steps" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-personal-identification"><strong>1. Personal Identification</strong><a href="#1-personal-identification" class="hash-link" aria-label="Direct link to 1-personal-identification" title="Direct link to 1-personal-identification" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Action</strong>: The merchant is required to provide personal identification details to verify their identity.</li>
+<li class=""><strong>Details</strong>:<!-- -->
+<ul>
+<li class=""><strong>Full Name</strong>: The legal name of the business owner or authorized representative.</li>
+<li class=""><strong>Date of Birth</strong>: The birthdate of the business owner or representative.</li>
+<li class=""><strong>Government-Issued ID Number</strong>: A unique identifier issued by a government authority (e.g., passport number, national ID number).</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-business-identification"><strong>2. Business Identification</strong><a href="#2-business-identification" class="hash-link" aria-label="Direct link to 2-business-identification" title="Direct link to 2-business-identification" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Action</strong>: The merchant’s business details are verified.</li>
+<li class=""><strong>Details</strong>:<!-- -->
+<ul>
+<li class=""><strong>Business Registration Number</strong>: The official business registration number provided by the relevant government authority.</li>
+<li class=""><strong>DBA (Doing Business As) Name</strong>: The trade name under which the business operates.</li>
+<li class=""><strong>Tax Identification Number (TIN)</strong>: A unique identifier used for tax purposes.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-address-verification"><strong>3. Address Verification</strong><a href="#3-address-verification" class="hash-link" aria-label="Direct link to 3-address-verification" title="Direct link to 3-address-verification" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Action</strong>: The merchant must provide proof of their business address.</li>
+<li class=""><strong>Details</strong>:<!-- -->
+<ul>
+<li class=""><strong>Business Address</strong>: The physical location of the business.</li>
+<li class=""><strong>Supporting Document</strong>: A utility bill, lease agreement, or other official documents that verify the business address.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-financial-information"><strong>4. Financial Information</strong><a href="#4-financial-information" class="hash-link" aria-label="Direct link to 4-financial-information" title="Direct link to 4-financial-information" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Action</strong>: The merchant must provide their financial details to ensure their bank accounts are valid and linked to their business operations.</li>
+<li class=""><strong>Details</strong>:<!-- -->
+<ul>
+<li class=""><strong>Bank Account Information</strong>: The merchant’s <strong>IBAN</strong>, <strong>Account Title</strong>, and <strong>Branch Code</strong>.</li>
+<li class=""><strong>Proof of Account Ownership</strong>: A recent bank statement or document verifying the account ownership.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-risk-assessment"><strong>5. Risk Assessment</strong><a href="#5-risk-assessment" class="hash-link" aria-label="Direct link to 5-risk-assessment" title="Direct link to 5-risk-assessment" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Action</strong>: The merchant’s risk profile is assessed to determine the level of scrutiny required.</li>
+<li class=""><strong>Details</strong>:<!-- -->
+<ul>
+<li class=""><strong>Transaction History</strong>: A review of the merchant’s historical transaction data (if available).</li>
+<li class=""><strong>Source of Funds</strong>: Information regarding the origin of funds, ensuring no illicit activities are involved.</li>
+<li class=""><strong>Business Nature</strong>: The type of business and its compliance with industry standards.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="required-documents-for-kyc"><strong>Required Documents for KYC</strong><a href="#required-documents-for-kyc" class="hash-link" aria-label="Direct link to required-documents-for-kyc" title="Direct link to required-documents-for-kyc" translate="no">​</a></h3>
+<p>The following documents are typically required for the KYC process:</p>
+<ul>
+<li class=""><strong>Government-issued ID</strong> (Passport, National ID, Driver&#x27;s License)</li>
+<li class=""><strong>Business Registration Certificate</strong> or <strong>Articles of Incorporation</strong></li>
+<li class=""><strong>Tax Identification Number (TIN)</strong></li>
+<li class=""><strong>Proof of Business Address</strong> (Utility Bill, Lease Agreement)</li>
+<li class=""><strong>Bank Account Proof</strong> (Recent Bank Statement)</li>
+<li class=""><strong>Selfie or Photo with ID</strong> (in some cases, to validate identity)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kyc-compliance-and-regulatory-requirements"><strong>KYC Compliance and Regulatory Requirements</strong><a href="#kyc-compliance-and-regulatory-requirements" class="hash-link" aria-label="Direct link to kyc-compliance-and-regulatory-requirements" title="Direct link to kyc-compliance-and-regulatory-requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="global-kyc-standards"><strong>Global KYC Standards</strong><a href="#global-kyc-standards" class="hash-link" aria-label="Direct link to global-kyc-standards" title="Direct link to global-kyc-standards" translate="no">​</a></h3>
+<p>The KYC process must comply with global financial regulations, including the following:</p>
+<ul>
+<li class=""><strong>Anti-Money Laundering (AML) Regulations</strong>: To prevent the illegal movement of funds, businesses must adhere to AML standards.</li>
+<li class=""><strong>Know Your Business (KYB)</strong>: Ensures that the business’s identity is verified, and their operational legitimacy is established.</li>
+<li class=""><strong>Sanctions and Watchlists</strong>: Merchants must be checked against international sanctions and watchlists to ensure compliance.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="regulatory-bodies"><strong>Regulatory Bodies</strong><a href="#regulatory-bodies" class="hash-link" aria-label="Direct link to regulatory-bodies" title="Direct link to regulatory-bodies" translate="no">​</a></h3>
+<p>KYC requirements vary depending on the country or region. However, the following global and regional regulatory bodies provide the framework for KYC practices:</p>
+<ul>
+<li class=""><strong>Financial Action Task Force (FATF)</strong>: Provides global standards for AML and KYC.</li>
+<li class=""><strong>Local Financial Regulators</strong>: Various countries have their own regulatory bodies (e.g., <strong>FCA</strong> in the UK, <strong>SEC</strong> in the US) that enforce KYC and AML regulations.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="configurable-kyc-process"><strong>Configurable KYC Process</strong><a href="#configurable-kyc-process" class="hash-link" aria-label="Direct link to configurable-kyc-process" title="Direct link to configurable-kyc-process" translate="no">​</a></h2>
+<p>Our system allows for flexible configuration of KYC processes depending on the <strong>merchant type</strong> and <strong>regulatory environment</strong>:</p>
+<ul>
+<li class=""><strong>KYC Levels</strong>: The system can enforce <strong>basic</strong>, <strong>standard</strong>, or <strong>enhanced KYC</strong> based on the risk profile of the merchant.</li>
+<li class=""><strong>KYC Validation Methods</strong>: Depending on the jurisdiction, the system may integrate with third-party KYC services to validate merchant documents, biometric data, or other verification methods.</li>
+<li class=""><strong>Document Review Workflow</strong>: The review and approval process for merchant documents can be configured to include a single-stage or multi-stage approval process, depending on the level of compliance required.</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#kyc-process-for-merchant-onboarding" class="table-of-contents__link toc-highlight"><strong>KYC Process for Merchant Onboarding</strong></a><ul><li><a href="#key-kyc-verification-steps" class="table-of-contents__link toc-highlight"><strong>Key KYC Verification Steps</strong></a><ul><li><a href="#1-personal-identification" class="table-of-contents__link toc-highlight"><strong>1. Personal Identification</strong></a></li><li><a href="#2-business-identification" class="table-of-contents__link toc-highlight"><strong>2. Business Identification</strong></a></li><li><a href="#3-address-verification" class="table-of-contents__link toc-highlight"><strong>3. Address Verification</strong></a></li><li><a href="#4-financial-information" class="table-of-contents__link toc-highlight"><strong>4. Financial Information</strong></a></li><li><a href="#5-risk-assessment" class="table-of-contents__link toc-highlight"><strong>5. Risk Assessment</strong></a></li></ul></li><li><a href="#required-documents-for-kyc" class="table-of-contents__link toc-highlight"><strong>Required Documents for KYC</strong></a></li></ul></li><li><a href="#kyc-compliance-and-regulatory-requirements" class="table-of-contents__link toc-highlight"><strong>KYC Compliance and Regulatory Requirements</strong></a><ul><li><a href="#global-kyc-standards" class="table-of-contents__link toc-highlight"><strong>Global KYC Standards</strong></a></li><li><a href="#regulatory-bodies" class="table-of-contents__link toc-highlight"><strong>Regulatory Bodies</strong></a></li></ul></li><li><a href="#configurable-kyc-process" class="table-of-contents__link toc-highlight"><strong>Configurable KYC Process</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Paysys Labs.</div></div></div></footer></div>
+</body>
+</html>
