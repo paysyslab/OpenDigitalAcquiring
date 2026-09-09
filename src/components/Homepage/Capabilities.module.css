@@ -1,0 +1,119 @@
+.section {
+  border-bottom: 1px solid var(--oa-surface-line);
+  background: var(--oa-surface);
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: var(--oa-ink);
+  margin-bottom: 1.75rem;
+}
+
+.featured {
+  display: block;
+  border-radius: 16px;
+  background: var(--oa-brand-700);
+  padding: 1.75rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.featured:hover {
+  background: var(--oa-brand-900);
+  text-decoration: none;
+}
+
+.featuredMeta {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 0.75rem;
+}
+
+.featuredTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.featuredDescription {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 42ch;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--oa-surface-line);
+}
+
+.listItem {
+  border-bottom: 1px solid var(--oa-surface-line);
+}
+
+.listLink {
+  display: block;
+  padding: 1.15rem 0.25rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.listLink:hover {
+  background: var(--oa-surface-sunken);
+  text-decoration: none;
+  color: inherit;
+}
+
+.listTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.listTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--oa-ink);
+  margin: 0;
+}
+
+.listMeta {
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  color: var(--oa-ink-muted);
+}
+
+.listDescription {
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--oa-ink-soft);
+}
+
+@media screen and (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}

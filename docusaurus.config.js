@@ -18,7 +18,7 @@ const config = {
   
 
   // Set the production url of your site here
-  url: 'https://paysyslabs.github.io',
+  url: 'https://paysyslab.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/OpenDigitalAcquiring/',
@@ -29,7 +29,11 @@ const config = {
   projectName: 'OpenDigitalAcquiring', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw', 
+  onBrokenMarkdownLinks: 'throw',
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -86,9 +90,8 @@ themeConfig: {
      
       },
       items: [
-        { to: '/docs/RAAST/MMS/User Management/User-view', label: 'Merchant management', position: 'left' },
-        { to: '/docs/RAAST/Merchant-portal/dashboard', label: 'Merchant portal', position: 'left' },
-        { to: '/docs/RAAST/Merchant-app/Dashboard', label: 'Merchant app', position: 'left'},
+        { to: '/docs/RAAST/RAAST-P2M-Acquiring', label: 'Raast Acquiring', position: 'left' },
+        { to: '/docs/International/Introduction', label: 'International Acquiring', position: 'left' },
       ],
     },
 

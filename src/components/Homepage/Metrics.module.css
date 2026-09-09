@@ -1,0 +1,50 @@
+.metrics {
+  border-bottom: 1px solid var(--oa-surface-line);
+  background: var(--oa-surface);
+}
+
+.grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2.75rem 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.item {
+  border-left: 2px solid var(--oa-accent);
+  padding-left: 1rem;
+}
+
+.value {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--oa-ink);
+  margin-bottom: 0.15rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--oa-ink);
+  margin-bottom: 0.15rem;
+}
+
+.detail {
+  font-size: 0.85rem;
+  color: var(--oa-ink-muted);
+}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

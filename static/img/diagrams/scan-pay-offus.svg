@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 1024" width="1220" height="1024" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1220" height="1024" fill="#ffffff"/>
+<defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333333"/>
+    </marker>
+  </defs>
+<line x1="100" y1="66" x2="100" y2="962" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="270" y1="66" x2="270" y2="962" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="440" y1="66" x2="440" y2="962" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="610" y1="66" x2="610" y2="962" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="780" y1="66" x2="780" y2="962" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="950" y1="66" x2="950" y2="962" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="1120" y1="66" x2="1120" y2="962" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<rect x="30" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Off-Net User</text>
+<rect x="30" y="962" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="988" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Off-Net User</text>
+<rect x="200" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Off-Net App</text>
+<rect x="200" y="962" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="988" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Off-Net App</text>
+<rect x="370" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Off-Net Backend</text>
+<rect x="370" y="962" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="988" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Off-Net Backend</text>
+<rect x="540" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Central Bank</text>
+<rect x="540" y="962" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="988" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Central Bank</text>
+<rect x="710" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Mixx PI</text>
+<rect x="710" y="962" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="988" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Mixx PI</text>
+<rect x="880" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP</text>
+<rect x="880" y="962" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="988" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP</text>
+<rect x="1050" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1120" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">WSO2/AMDOCS</text>
+<rect x="1050" y="962" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1120" y="988" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">WSO2/AMDOCS</text>
+<line x1="100" y1="100" x2="270" y2="100" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="92" text-anchor="middle" font-size="12" fill="#222222">Scans Mixx QR code</text>
+<line x1="270" y1="144" x2="440" y2="144" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="355" y="136" text-anchor="middle" font-size="12" fill="#222222">Search Merchant SHID Alias</text>
+<line x1="440" y1="188" x2="610" y2="188" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="525" y="180" text-anchor="middle" font-size="12" fill="#222222">Alias forwarded for resolution</text>
+<line x1="610" y1="232" x2="440" y2="232" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="525" y="209" text-anchor="middle" font-size="12" fill="#222222">Merchant details returned (no</text>
+<text x="525" y="224" text-anchor="middle" font-size="12" fill="#222222">call to Mixx PI)</text>
+<line x1="440" y1="290" x2="270" y2="290" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="355" y="267" text-anchor="middle" font-size="12" fill="#222222">Merchant details displayed;</text>
+<text x="355" y="282" text-anchor="middle" font-size="12" fill="#222222">confirm?</text>
+<line x1="100" y1="348" x2="270" y2="348" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="340" text-anchor="middle" font-size="12" fill="#222222">User confirms payment</text>
+<line x1="270" y1="392" x2="440" y2="392" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="355" y="384" text-anchor="middle" font-size="12" fill="#222222">Payment request submitted</text>
+<line x1="440" y1="436" x2="610" y2="436" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="525" y="428" text-anchor="middle" font-size="12" fill="#222222">Request forwarded</text>
+<line x1="610" y1="480" x2="780" y2="480" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="695" y="457" text-anchor="middle" font-size="12" fill="#222222">Request forwarded to acquiring</text>
+<text x="695" y="472" text-anchor="middle" font-size="12" fill="#222222">backend</text>
+<line x1="780" y1="538" x2="950" y2="538" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="865" y="515" text-anchor="middle" font-size="12" fill="#222222">Authorise: merchantAlias,</text>
+<text x="865" y="530" text-anchor="middle" font-size="12" fill="#222222">endToEndId, amount</text>
+<path d="M950,596 h55 v18 h-55" fill="none" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="958" y="560" font-size="12" fill="#222222">Validate ACTIVE; check rules;</text>
+<text x="958" y="575" font-size="12" fill="#222222">persist endToEndId;</text>
+<text x="958" y="590" font-size="12" fill="#222222">AUTHORISED_PENDING</text>
+<line x1="950" y1="670" x2="780" y2="670" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="865" y="662" text-anchor="middle" font-size="12" fill="#222222">APPROVED + mdrTag</text>
+<line x1="780" y1="714" x2="950" y2="714" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="865" y="706" text-anchor="middle" font-size="12" fill="#222222">Reservation + MDR-GROUP-X</text>
+<line x1="950" y1="758" x2="780" y2="758" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="865" y="750" text-anchor="middle" font-size="12" fill="#222222">Reservation OK</text>
+<path d="M780,802 h55 v18 h-55" fill="none" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="788" y="796" font-size="12" fill="#222222">Complete payment execution</text>
+<line x1="780" y1="846" x2="1120" y2="846" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="950" y="823" text-anchor="middle" font-size="12" fill="#222222">Execute - apply MDR; settle Net</text>
+<text x="950" y="838" text-anchor="middle" font-size="12" fill="#222222">+ Fee</text>
+<line x1="1120" y1="904" x2="950" y2="904" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="1035" y="896" text-anchor="middle" font-size="12" fill="#222222">Complete Payment Callback</text>
+</svg>

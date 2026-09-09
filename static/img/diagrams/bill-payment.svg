@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 964" width="1050" height="964" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1050" height="964" fill="#ffffff"/>
+<defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333333"/>
+    </marker>
+  </defs>
+<line x1="100" y1="66" x2="100" y2="902" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="270" y1="66" x2="270" y2="902" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="440" y1="66" x2="440" y2="902" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="610" y1="66" x2="610" y2="902" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="780" y1="66" x2="780" y2="902" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="950" y1="66" x2="950" y2="902" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<rect x="30" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Merchant</text>
+<rect x="30" y="902" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="928" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Merchant</text>
+<rect x="200" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">LKS Portal</text>
+<rect x="200" y="902" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="928" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">LKS Portal</text>
+<rect x="370" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">WSO2</text>
+<rect x="370" y="902" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="928" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">WSO2</text>
+<rect x="540" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Biller System</text>
+<rect x="540" y="902" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="928" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Biller System</text>
+<rect x="710" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Core Wallet</text>
+<rect x="710" y="902" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="928" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Core Wallet</text>
+<rect x="880" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP</text>
+<rect x="880" y="902" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="928" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP</text>
+<line x1="100" y1="100" x2="270" y2="100" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="92" text-anchor="middle" font-size="12" fill="#222222">Open Bill Payment</text>
+<line x1="270" y1="144" x2="440" y2="144" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="355" y="136" text-anchor="middle" font-size="12" fill="#222222">GET /billers (nodeId=channel id)</text>
+<line x1="440" y1="188" x2="610" y2="188" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="525" y="180" text-anchor="middle" font-size="12" fill="#222222">Fetch biller list</text>
+<line x1="610" y1="232" x2="440" y2="232" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="525" y="209" text-anchor="middle" font-size="12" fill="#222222">Return: category, ID, alias,</text>
+<text x="525" y="224" text-anchor="middle" font-size="12" fill="#222222">payment mode</text>
+<line x1="440" y1="290" x2="270" y2="290" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="355" y="282" text-anchor="middle" font-size="12" fill="#222222">Display 7 categories; 39 billers</text>
+<line x1="100" y1="334" x2="270" y2="334" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="311" text-anchor="middle" font-size="12" fill="#222222">Select category + biller; enter</text>
+<text x="185" y="326" text-anchor="middle" font-size="12" fill="#222222">bill reference</text>
+<line x1="270" y1="392" x2="440" y2="392" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="355" y="369" text-anchor="middle" font-size="12" fill="#222222">Bill Inquiry (pre-auth):</text>
+<text x="355" y="384" text-anchor="middle" font-size="12" fill="#222222">validate ref; fetch amount due</text>
+<line x1="440" y1="450" x2="610" y2="450" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="525" y="442" text-anchor="middle" font-size="12" fill="#222222">GET /bill-inquiry {ref}</text>
+<line x1="610" y1="494" x2="440" y2="494" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="525" y="486" text-anchor="middle" font-size="12" fill="#222222">Return amount due, bill details</text>
+<line x1="440" y1="538" x2="270" y2="538" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="355" y="530" text-anchor="middle" font-size="12" fill="#222222">Show bill details; confirm?</text>
+<line x1="100" y1="582" x2="270" y2="582" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="559" text-anchor="middle" font-size="12" fill="#222222">Authenticate (PIN/biometric);</text>
+<text x="185" y="574" text-anchor="middle" font-size="12" fill="#222222">confirm</text>
+<path d="M270,640 h55 v18 h-55" fill="none" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="278" y="634" font-size="12" fill="#222222">Validate: limits, PIN, balance</text>
+<line x1="270" y1="684" x2="440" y2="684" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="355" y="676" text-anchor="middle" font-size="12" fill="#222222">POST Pay Bill transaction</text>
+<line x1="440" y1="728" x2="780" y2="728" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="610" y="705" text-anchor="middle" font-size="12" fill="#222222">Debit merchant wallet; route to</text>
+<text x="610" y="720" text-anchor="middle" font-size="12" fill="#222222">biller</text>
+<line x1="780" y1="786" x2="440" y2="786" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="610" y="778" text-anchor="middle" font-size="12" fill="#222222">Payment SUCCESS</text>
+<line x1="440" y1="830" x2="950" y2="830" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="695" y="807" text-anchor="middle" font-size="12" fill="#222222">MerchantTxnRequest: store,</text>
+<text x="695" y="822" text-anchor="middle" font-size="12" fill="#222222">notify (receipt)</text>
+</svg>

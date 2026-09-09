@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 628" width="1050" height="628" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1050" height="628" fill="#ffffff"/>
+<defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333333"/>
+    </marker>
+  </defs>
+<line x1="100" y1="66" x2="100" y2="566" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="270" y1="66" x2="270" y2="566" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="440" y1="66" x2="440" y2="566" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="610" y1="66" x2="610" y2="566" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="780" y1="66" x2="780" y2="566" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="950" y1="66" x2="950" y2="566" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<rect x="30" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Customer</text>
+<rect x="30" y="566" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="592" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Customer</text>
+<rect x="200" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Agent</text>
+<rect x="200" y="566" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="592" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Agent</text>
+<rect x="370" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">LKS Portal</text>
+<rect x="370" y="566" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="592" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">LKS Portal</text>
+<rect x="540" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP Backend</text>
+<rect x="540" y="566" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="592" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP Backend</text>
+<rect x="710" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Core Wallet</text>
+<rect x="710" y="566" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="592" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Core Wallet</text>
+<rect x="880" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">NotifySvc</text>
+<rect x="880" y="566" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="592" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">NotifySvc</text>
+<line x1="100" y1="100" x2="270" y2="100" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="77" text-anchor="middle" font-size="12" fill="#222222">Requests cashout; provides</text>
+<text x="185" y="92" text-anchor="middle" font-size="12" fill="#222222">MSISDN</text>
+<line x1="270" y1="158" x2="440" y2="158" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="355" y="135" text-anchor="middle" font-size="12" fill="#222222">Login; navigate to Cashout;</text>
+<text x="355" y="150" text-anchor="middle" font-size="12" fill="#222222">enter customer MSISDN + amount</text>
+<line x1="440" y1="216" x2="610" y2="216" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="525" y="193" text-anchor="middle" font-size="12" fill="#222222">POST /cashout {customerMsisdn,</text>
+<text x="525" y="208" text-anchor="middle" font-size="12" fill="#222222">amount, agentId, tillId}</text>
+<path d="M610,274 h55 v18 h-55" fill="none" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="618" y="238" font-size="12" fill="#222222">Validate: agent ACTIVE; till</text>
+<text x="618" y="253" font-size="12" fill="#222222">ACTIVE; MSISDN registered;</text>
+<text x="618" y="268" font-size="12" fill="#222222">cashout limit</text>
+<line x1="610" y1="348" x2="780" y2="348" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="695" y="325" text-anchor="middle" font-size="12" fill="#222222">Debit customer wallet; credit</text>
+<text x="695" y="340" text-anchor="middle" font-size="12" fill="#222222">agent wallet</text>
+<line x1="780" y1="406" x2="610" y2="406" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="695" y="383" text-anchor="middle" font-size="12" fill="#222222">Execution result: SUCCESS |</text>
+<text x="695" y="398" text-anchor="middle" font-size="12" fill="#222222">FAILURE</text>
+<line x1="610" y1="464" x2="950" y2="464" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="780" y="456" text-anchor="middle" font-size="12" fill="#222222">Notify agent + customer</text>
+<line x1="270" y1="508" x2="100" y2="508" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="500" text-anchor="middle" font-size="12" fill="#222222">Physically disburse cash</text>
+</svg>

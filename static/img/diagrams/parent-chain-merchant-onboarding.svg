@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 962" width="1560" height="962" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1560" height="962" fill="#ffffff"/>
+<defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333333"/>
+    </marker>
+  </defs>
+<line x1="100" y1="66" x2="100" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="270" y1="66" x2="270" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="440" y1="66" x2="440" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="610" y1="66" x2="610" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="780" y1="66" x2="780" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="950" y1="66" x2="950" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="1120" y1="66" x2="1120" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="1290" y1="66" x2="1290" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<line x1="1460" y1="66" x2="1460" y2="900" stroke="#a9a9a9" stroke-width="1.4" stroke-dasharray="4,3"/>
+<rect x="30" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">User Maker</text>
+<rect x="30" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="100" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">User Maker</text>
+<rect x="200" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP Portal</text>
+<rect x="200" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="270" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP Portal</text>
+<rect x="370" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP Backend</text>
+<rect x="370" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="440" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP Backend</text>
+<rect x="540" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Compliance</text>
+<rect x="540" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="610" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Compliance</text>
+<rect x="710" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP DB</text>
+<rect x="710" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="780" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">MMP DB</text>
+<rect x="880" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Checker</text>
+<rect x="880" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="950" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Checker</text>
+<rect x="1050" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1120" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Core Wallet</text>
+<rect x="1050" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1120" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">Core Wallet</text>
+<rect x="1220" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1290" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">PI-RAC</text>
+<rect x="1220" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1290" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">PI-RAC</text>
+<rect x="1390" y="24" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1460" y="50" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">NotifySvc</text>
+<rect x="1390" y="900" width="140" height="42" rx="6" fill="#2f5fa8" stroke="#1c3f78" stroke-width="1"/>
+      <text x="1460" y="926" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="600">NotifySvc</text>
+<line x1="100" y1="100" x2="270" y2="100" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="185" y="77" text-anchor="middle" font-size="12" fill="#222222">Complete 6 steps; click Submit</text>
+<text x="185" y="92" text-anchor="middle" font-size="12" fill="#222222">Merchant</text>
+<line x1="270" y1="158" x2="440" y2="158" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="355" y="150" text-anchor="middle" font-size="12" fill="#222222">POST /merchants (full payload)</text>
+<path d="M440,202 h55 v18 h-55" fill="none" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="448" y="166" font-size="12" fill="#222222">Validate fields; MSISDN</text>
+<text x="448" y="181" font-size="12" fill="#222222">uniqueness; document</text>
+<text x="448" y="196" font-size="12" fill="#222222">completeness</text>
+<line x1="440" y1="276" x2="610" y2="276" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="525" y="253" text-anchor="middle" font-size="12" fill="#222222">AML + OFAC + PEP + Blacklist</text>
+<text x="525" y="268" text-anchor="middle" font-size="12" fill="#222222">screening (async)</text>
+<line x1="610" y1="334" x2="440" y2="334" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="525" y="311" text-anchor="middle" font-size="12" fill="#222222">Screening result: PASS | FAIL |</text>
+<text x="525" y="326" text-anchor="middle" font-size="12" fill="#222222">MANUAL_REVIEW</text>
+<line x1="440" y1="392" x2="780" y2="392" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="610" y="369" text-anchor="middle" font-size="12" fill="#222222">Store PENDING_APPROVAL; activate</text>
+<text x="610" y="384" text-anchor="middle" font-size="12" fill="#222222">Request Locking</text>
+<line x1="440" y1="450" x2="950" y2="450" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="695" y="427" text-anchor="middle" font-size="12" fill="#222222">Route to Checker Inbox; notify</text>
+<text x="695" y="442" text-anchor="middle" font-size="12" fill="#222222">Checker</text>
+<line x1="950" y1="508" x2="440" y2="508" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="695" y="485" text-anchor="middle" font-size="12" fill="#222222">Reviews all data + compliance;</text>
+<text x="695" y="500" text-anchor="middle" font-size="12" fill="#222222">POST /merchants/{id}/approve</text>
+<line x1="440" y1="566" x2="780" y2="566" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="610" y="543" text-anchor="middle" font-size="12" fill="#222222">Set status ACTIVE; auto-create</text>
+<text x="610" y="558" text-anchor="middle" font-size="12" fill="#222222">default till</text>
+<line x1="440" y1="624" x2="780" y2="624" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="610" y="601" text-anchor="middle" font-size="12" fill="#222222">Assign 8-digit Ref No + 7-digit</text>
+<text x="610" y="616" text-anchor="middle" font-size="12" fill="#222222">Short Code from Identifier Pool</text>
+<line x1="440" y1="682" x2="1290" y2="682" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="865" y="659" text-anchor="middle" font-size="12" fill="#222222">Initiate alias creation: SHID +</text>
+<text x="865" y="674" text-anchor="middle" font-size="12" fill="#222222">MBNO + MCOD</text>
+<line x1="1290" y1="740" x2="440" y2="740" stroke="#333333" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+<text x="865" y="732" text-anchor="middle" font-size="12" fill="#222222">Alias creation confirmed</text>
+<line x1="440" y1="784" x2="1120" y2="784" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="780" y="776" text-anchor="middle" font-size="12" fill="#222222">Activate merchant wallet</text>
+<line x1="440" y1="828" x2="1460" y2="828" stroke="#333333" stroke-width="1.4"  marker-end="url(#arrow)"/>
+<text x="950" y="805" text-anchor="middle" font-size="12" fill="#222222">Dispatch credentials + till code</text>
+<text x="950" y="820" text-anchor="middle" font-size="12" fill="#222222">to merchant</text>
+</svg>

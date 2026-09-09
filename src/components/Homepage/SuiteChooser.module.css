@@ -1,0 +1,234 @@
+.section {
+  border-bottom: 1px solid var(--oa-surface-line);
+  background: var(--oa-surface-sunken);
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.intro {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oa-brand-600);
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin: 0.75rem 0 0;
+  color: var(--oa-ink);
+}
+
+.description {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--oa-ink-soft);
+}
+
+.fieldset {
+  border: none;
+  margin: 2.5rem auto 0;
+  padding: 0;
+  max-width: 900px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--oa-surface-line);
+  border: 1px solid var(--oa-surface-line);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(16, 18, 35, 0.04);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  background: var(--oa-surface);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.card:hover {
+  background: var(--oa-surface-sunken);
+}
+
+.cardSelected,
+.cardSelected:hover {
+  background: var(--oa-brand-50);
+}
+
+.radioInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.iconBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--oa-surface-sunken);
+  color: var(--oa-brand-700);
+}
+
+.iconBadgeSelected {
+  background: var(--oa-brand-700);
+  color: #ffffff;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid var(--oa-surface-line);
+  background: var(--oa-surface);
+  font-size: 0.75rem;
+  color: transparent;
+}
+
+.checkSelected {
+  border-color: var(--oa-brand-700);
+  background: var(--oa-brand-700);
+  color: #ffffff;
+}
+
+.cardEyebrow {
+  margin-top: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--oa-brand-600);
+}
+
+.cardName {
+  margin-top: 0.35rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--oa-ink);
+}
+
+.cardSummary {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--oa-ink-soft);
+}
+
+.cardMeta {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--oa-surface-line);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metaLabel {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--oa-ink-muted);
+}
+
+.metaValue {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--oa-ink);
+}
+
+.footer {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.75rem;
+  background: var(--oa-surface);
+  border: 1px solid var(--oa-surface-line);
+  border-top: none;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.bestFor {
+  font-size: 0.9rem;
+  color: var(--oa-ink-soft);
+}
+
+.bestForLabel {
+  font-weight: 600;
+  color: var(--oa-ink);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 8px;
+  background: var(--oa-brand-700);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.25rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.cta:hover {
+  background: var(--oa-brand-900);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
