@@ -31,5 +31,5 @@ This functionality allows an existing merchant to log in to the Merchant App usi
 
 
 <div style={{ width : '30%' }}>
-  ![Merchant Login](/img/Registration/login.png)
+  ![Merchant Login](/img/Registration/Login.png)
 </div>

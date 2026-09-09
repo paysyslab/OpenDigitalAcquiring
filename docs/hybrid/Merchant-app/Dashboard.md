@@ -28,5 +28,5 @@ This dashboard acts as the central operational hub, enabling merchants to monito
 
 
 <div style={{ width: '30%'}}>
-  ![Merchant App - Transaction History](/img/dashboard/dashboard.png)
+  ![Merchant App - Transaction History](/img/dashboard/Dashboard.png)
 </div>

@@ -14,7 +14,7 @@
 
 
 <div style={{ textAlign: 'center'}}>
-  ![OpenConnect – RAAST Integration Architecture](/img/bulk-merchant-updation-ff.png)
+  ![OpenConnect – RAAST Integration Architecture](/img/Bulk-merchant-updation-ff.png)
 </div>
 
 
